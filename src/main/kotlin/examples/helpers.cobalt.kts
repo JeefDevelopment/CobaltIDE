@@ -1,3 +1,11 @@
+import net.minecraft.server.MinecraftServer
+
+// Descriptor: (Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)Z
+inline fun MinecraftServer.loadDataPacks_0(/* arguments */) = this.method_29736(/* arguments */)
+
+fun e(minecraftServer: MinecraftServer){
+        minecraftServer.loadDataPacks_0(a)
+}
 /**
  * Send messages to discord easily! replace the string of numbers with the channel id!
  */
@@ -6,7 +14,6 @@ fun discordPrint(message: String){
     val channel = jda.getTextChannelById("1480993849991106643")
     channel?.sendMessage(message)?.queue()
 }
-
 /**
  * Get the same colors for each type as is used everywhere, with a variant for legacy and minimessage color codes!
  */
