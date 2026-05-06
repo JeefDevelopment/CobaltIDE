@@ -55,6 +55,7 @@ kotlin {
 		main {
 			kotlin.srcDir("src/main/kotlin")
 			kotlin.include("**/*.cobalt.kts")
+			kotlin.include("**/*.kt")
 		}
 	}
 }
