@@ -1,4 +1,4 @@
-git add .package io.github.jeefdevelopment.cobalt.script.annotation.handler
+package io.github.jeefdevelopment.cobalt.script.annotation.handler
 
 import io.github.jeefdevelopment.cobalt.script.annotation.ImportScript
 import java.io.File
