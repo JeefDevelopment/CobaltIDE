@@ -51,6 +51,12 @@ kotlin {
 		jvmTarget = JvmTarget.JVM_21
 		freeCompilerArgs.add("-Xallow-any-scripts-in-source-roots")
 	}
+	sourceSets {
+		main {
+			kotlin.srcDir("src/main/kotlin")
+			kotlin.include("**/*.cobalt.kts")
+		}
+	}
 }
 
 java {

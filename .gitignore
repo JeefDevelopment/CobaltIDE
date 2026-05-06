@@ -10,7 +10,6 @@ classes/
 
 # idea
 
-.idea/
 *.iml
 *.ipr
 *.iws

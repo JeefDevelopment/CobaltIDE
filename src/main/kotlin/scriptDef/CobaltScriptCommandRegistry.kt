@@ -1,4 +1,4 @@
-package io.github.jeefdevelopment.cobalt.event
+package scriptDef
 
 import com.mojang.brigadier.CommandDispatcher
 import com.mojang.brigadier.builder.LiteralArgumentBuilder
