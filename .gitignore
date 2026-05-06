@@ -1,10 +1,9 @@
 # gradle
-
+src/main/kotlin/scripts/**/*.kts
 .gradle/
 build/
 out/
 classes/
-src/main/kotlin/scripts
 # eclipse
 
 *.launch
@@ -33,7 +32,7 @@ bin/
 run/
 
 # java
-
+libs/*.jar
 hs_err_*.log
 replay_*.log
 *.hprof

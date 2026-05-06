@@ -9,7 +9,13 @@ version = providers.gradleProperty("mod_version").get()
 group = providers.gradleProperty("maven_group").get()
 
 repositories {
+	maven("https://maven.nucleoid.xyz/") { name = "Nucleoid" }
 	maven("https://maven.impactdev.net/repository/development/")
+	maven("https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/") // Often required for dependencies
+
+	maven("https://maven.latvian.dev/releases")
+
+	mavenCentral()
 }
 
 dependencies {
@@ -23,6 +29,15 @@ dependencies {
 	modImplementation("net.fabricmc.fabric-api:fabric-api:${providers.gradleProperty("fabric_api_version").get()}")
 	modImplementation("net.fabricmc:fabric-language-kotlin:${providers.gradleProperty("fabric_kotlin_version").get()}")
 	modImplementation("com.cobblemon:fabric:1.7.3+1.21.1")
+	modImplementation("eu.pb4:polymer-core:0.9.19+1.21.1")
+	modImplementation("eu.pb4:sgui:1.6.1+1.21.1")
+	modImplementation("eu.pb4:polymer-virtual-entity:0.9.19+1.21.1")
+	modImplementation("eu.pb4:polymer-resource-pack:0.9.19+1.21.1")
+	modImplementation("eu.pb4:factorytools:0.3.2+1.21")
+	implementation("net.impactdev.impactor.api:economy:5.3.5")
+	modImplementation(fileTree("dir" to "libs", "include" to "*.jar"))
+	modImplementation("eu.pb4:placeholder-api:2.4.2+1.21")
+	modImplementation("ca.landonjw.gooeylibs:fabric:3.1.0-1.21.1-SNAPSHOT")
 }
 tasks.processResources {
 	inputs.property("version", version)
